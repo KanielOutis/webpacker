@@ -18,7 +18,7 @@ class Webpacker::Env
 
   private
     def current
-      Rails.env.presence_in(available_environments)
+      'development'#Rails.env.presence_in(available_environments)
     end
 
     def fallback_env_warning
